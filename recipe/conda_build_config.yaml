@@ -1,0 +1,4 @@
+r_base:
+  - 4.1  # [linux or win]
+  - 4.2  # [not win]
+  - 4.3  # [not win]
