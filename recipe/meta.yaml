@@ -1,6 +1,5 @@
 {% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-stringmagic
@@ -13,8 +12,7 @@ source:
   sha256: eed1c04aa99be5a99ecfdd32498279f170e261669cc1b91d18673454064b8f8c
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +40,6 @@ requirements:
     - r-rcpp >=1.0.5
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=1.0.5
 
 test:
