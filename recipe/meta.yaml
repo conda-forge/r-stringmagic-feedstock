@@ -1,4 +1,4 @@
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/stringmagic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/stringmagic/stringmagic_{{ version }}.tar.gz
-  sha256: eed1c04aa99be5a99ecfdd32498279f170e261669cc1b91d18673454064b8f8c
+  sha256: a60281ff987d0db25c87f32303a7aa5ba3733d4e1915c877ca92d0f552fd13a0
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
